@@ -1,3 +1,14 @@
-body {
-	background-color: #f00;
-}
+// 7-1 pattern architecture
+// https://sass-guidelin.es/#the-7-1-pattern
+
+// Variables
+@import "./abstracts/_variables";
+
+// Base
+@import "./base/_typography";
+
+// Layout
+@import "./layout/_main";
+
+// Pages
+@import "./pages/_home";
