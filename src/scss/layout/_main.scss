@@ -1,8 +1,35 @@
 section {
-    padding-left: 5vw;
-    padding-right: 5vw;
 
+    // Whitespace along the left and right sides
+    padding-left: 40px; //xs
+    padding-right: 40px;
+    @media (min-width: $sm-min-width) {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    @media (min-width: $md-min-width) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    @media (min-width: $lg-min-width) {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+    @media (min-width: $xl-min-width) {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+
+    // White space between each section
     &:not(:first-of-type) {
         margin-top: 50px;
     }
 }
+
+
+
+$xs-min-width: 0px;
+$sm-min-width: 544px;
+$md-min-width: 768px;
+$lg-min-width: 992px;
+$xl-min-width: 1200px;
