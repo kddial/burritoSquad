@@ -1,0 +1,8 @@
+section {
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    &:not(:first-of-type) {
+        margin-top: 50px;
+    }
+}

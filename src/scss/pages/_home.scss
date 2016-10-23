@@ -10,7 +10,10 @@
 
 	// Cover section
 	.cover-section {
+		padding: 0px;
+
 		.cover-height {
+			background: linear-gradient(to bottom, rgba(1,1,1,0.8), rgba(1,1,1,0.5) 40%, rgba(0,0,0,0));
 			height: 45vh;
 			@media (min-width: $md-min-width) {
 				height: 55vh;
@@ -28,8 +31,7 @@
 			width: 100%;
 			display: flex;
 			justify-content: center;
-			background: linear-gradient(to bottom, rgba(1,1,1,0.8), rgba(1,1,1,0.8) 50%, rgba(0,0,0,0));
-
+			
 			.cover-logo {
 				height: 160px;
 			}
@@ -38,21 +40,57 @@
 		.cover-title-container {
 			display: flex;
 			justify-content: center;
+			margin-top: 15px;
 
 			.cover-title {
 				// TODO better font
 				width: 300px;
 				text-align: center;
-				color: white;
 			}
 		}
 	}
 
+
+	// Welcom section
+	.welcome {
+		.content {
+		}
+	}
+
+	.hours {
+		.schedule {
+			display: flex; // TODO make flex compatible
+			flex-direction: row;
+			
+			.schedule-days {
+				width: 20px;
+
+			}
+			.schedule-hours {
+				padding-left: 20px;
+				width: 135px;
+
+			}
+		}
+
+		
+	}
+
+
 	// Menu section
 	.menu-section {
 		.menu-img {
+			// width: 30vw;
 		}
 	}
 
 
+	.social-media-section {
+
+	}
+
+	.footer-section {
+		background-color: black;
+		height: 200px;
+	}
 }
