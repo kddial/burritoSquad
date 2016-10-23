@@ -1,96 +1,106 @@
-// $cover-image: url('../../public/images/cover.JPG');
 
 .home {
-	margin: 0px;
+    margin: 0px;
 
-	h1 {
-		font-size: 39px;
-		// color: white;
-	}
+    // Cover section
+    .cover-section {
+        padding: 0px;
 
-	// Cover section
-	.cover-section {
-		padding: 0px;
+        .cover-height {
+            background: linear-gradient(to bottom, rgba(1,1,1,0.8), rgba(1,1,1,0.5) 40%, rgba(0,0,0,0));
+            height: 45vh;
+            @media (min-width: $md-min-width) {
+                height: 55vh;
+            }
+        }
 
-		.cover-height {
-			background: linear-gradient(to bottom, rgba(1,1,1,0.8), rgba(1,1,1,0.5) 40%, rgba(0,0,0,0));
-			height: 45vh;
-			@media (min-width: $md-min-width) {
-				height: 55vh;
-			}
-		}
+        .cover-img {
+            width: 100vw;
+            position: absolute;
+            z-index: -1;
+            object-fit: cover;
+        }
 
-		.cover-img {
-			width: 100vw;
-			position: absolute;
-			z-index: -1;
-	    	object-fit: cover;
-		}
+        .cover-logo-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            
+            .cover-logo {
+                height: 160px;
+            }
+        }
 
-		.cover-logo-container {
-			width: 100%;
-			display: flex;
-			justify-content: center;
-			
-			.cover-logo {
-				height: 160px;
-			}
-		}
+        .cover-title-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
 
-		.cover-title-container {
-			display: flex;
-			justify-content: center;
-			margin-top: 15px;
-
-			.cover-title {
-				// TODO better font
-				width: 300px;
-				text-align: center;
-			}
-		}
-	}
+            .cover-title {
+                // TODO better font
+                width: 300px;
+                text-align: center;
+            }
+        }
+    }
 
 
-	// Welcom section
-	.welcome {
-		.content {
-		}
-	}
+    // Welcom section
+    .welcome {
+        .content {
+        }
+    }
 
-	.hours {
-		.schedule {
-			display: flex; // TODO make flex compatible
-			flex-direction: row;
-			
-			.schedule-days {
-				width: 20px;
+    .gmap-container {
+        #gmap {
+            width: 100%;
+        }
+        @media (max-width: 400px) {
+            padding-left: 0px;
+            padding-right: 0px;
+            #gmap {
+                width: 400px;
+            }
+        }
+        @media (min-width: 401px) and (max-width: 570px) {
+            padding-left: 0px;
+            padding-right: 0px;
+            #gmap {
+                width: 100vw;
+            }
+        }
+    }
 
-			}
-			.schedule-hours {
-				padding-left: 20px;
-				width: 135px;
-
-			}
-		}
-
-		
-	}
-
-
-	// Menu section
-	.menu-section {
-		.menu-img {
-			// width: 30vw;
-		}
-	}
+    .hours {
+        .schedule {
+            display: flex; // TODO make flex compatible
+            flex-direction: row;
+            
+            .schedule-days {
+                width: 20px;
+            }
+            .schedule-hours {
+                padding-left: 20px;
+                width: 135px;
+            }
+        }
+    }
 
 
-	.social-media-section {
+    // Menu section
+    .menu-section {
+        .menu-img {
+            // width: 30vw;
+        }
+    }
 
-	}
 
-	.footer-section {
-		background-color: black;
-		height: 200px;
-	}
+    .social-media-section {
+
+    }
+
+    .footer-section {
+        background-color: black;
+        height: 200px;
+    }
 }
