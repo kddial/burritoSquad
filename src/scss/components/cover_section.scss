@@ -1,0 +1,40 @@
+.cover-section {
+    padding: 0px;
+
+    .cover-height {
+        background: linear-gradient(to bottom, rgba(1,1,1,0.8), rgba(1,1,1,0.5) 40%, rgba(0,0,0,0));
+        height: 45vh;
+        @media (min-width: $md-min-width) {
+            height: 55vh;
+        }
+    }
+
+    .cover-img {
+        width: 100vw;
+        position: absolute;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+    .cover-logo-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        .cover-logo {
+            height: 160px;
+        }
+    }
+
+    .cover-title-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+
+        .cover-title {
+            // TODO better font
+            width: 300px;
+            text-align: center;
+        }
+    }
+}
