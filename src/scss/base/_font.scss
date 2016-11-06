@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+
+@font-face {
+  font-family: 'Stencil';
+  src:  url('../../public/font/Stencil.otf') format('truetype');
+}
+
+// font familys
+$font-family-stencil: "Stencil","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+$font-family-special-elite: 'Special Elite', cursive;
