@@ -1,15 +1,15 @@
 .home {
-    background-color: $color-sand-haze;
+    background-color: $color-white;
     margin: 0px;
 
     .welcome {
         text-align: center;
-        background-color: $color-army-green2;
     }
 
     .hours {
         text-align: center;
-        background-color: $color-army-orange;
+        background-color: $color-dark-red;
+        color: $color-sand-haze;
 
         .schedule {
             text-align: left;
@@ -18,30 +18,37 @@
             justify-content: center;
             
             .schedule-days {
-                width: 40px;
+                width: 52px;
             }
             .schedule-hours {
-                padding-left: 29px;
-                width: 133px;
+                margin-left: 24px;
+                width: 155px;
             }
         }
     }
 
     .delivery {
         text-align: center;
-        background-color: $color-army-red;
+        background-color: $color-green-pepper;
+        color: $color-sand-haze;
+        text-align: center;
     }
 
     .menu-section {
         text-align: center;
-    }
 
-    .social-media-section {
-        text-align: center;
+        .row {
+            img {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+        }
     }
 
     .address {
         text-align: center;
+        background-color: $color-dark-orange;
+        color: $color-sand-haze;
     }
 
     .footer-section {
