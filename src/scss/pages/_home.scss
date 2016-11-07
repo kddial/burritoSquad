@@ -1,5 +1,5 @@
 .home {
-    background-color: $color-sand-haze;
+    background-color: $color-white;
     margin: 0px;
 
     .welcome {
@@ -8,6 +8,8 @@
 
     .hours {
         text-align: center;
+        background-color: $color-dark-red;
+        color: $color-sand-haze;
 
         .schedule {
             text-align: left;
@@ -27,18 +29,26 @@
 
     .delivery {
         text-align: center;
+        background-color: $color-green-pepper;
+        color: $color-sand-haze;
+        text-align: center;
     }
 
     .menu-section {
         text-align: center;
-    }
 
-    .social-media-section {
-        text-align: center;
+        .row {
+            img {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+        }
     }
 
     .address {
         text-align: center;
+        background-color: $color-dark-orange;
+        color: $color-sand-haze;
     }
 
     .footer-section {
