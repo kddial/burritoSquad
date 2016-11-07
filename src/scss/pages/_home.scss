@@ -3,33 +3,49 @@
     margin: 0px;
 
     .welcome {
-        .content {
-        }
+        text-align: center;
+        background-color: $color-army-green2;
     }
 
     .hours {
+        text-align: center;
+        background-color: $color-army-orange;
+
         .schedule {
+            text-align: left;
             display: flex; // TODO make flex compatible
             flex-direction: row;
+            justify-content: center;
             
             .schedule-days {
-                width: 20px;
+                width: 40px;
             }
             .schedule-hours {
-                padding-left: 20px;
-                width: 135px;
+                padding-left: 29px;
+                width: 133px;
             }
         }
     }
 
+    .delivery {
+        text-align: center;
+        background-color: $color-army-red;
+    }
+
     .menu-section {
+        text-align: center;
     }
 
     .social-media-section {
+        text-align: center;
+    }
+
+    .address {
+        text-align: center;
     }
 
     .footer-section {
         background-color: black;
-        height: 200px;
+        height: 100px;
     }
 }
